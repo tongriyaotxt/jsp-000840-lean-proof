@@ -32,7 +32,7 @@ Statement correspondence notes: a simple graph on `n` vertices is a symmetric ir
 **Pinned proof source:**
 
 - Repository: https://github.com/tongriyaotxt/jsp-000840-lean-proof
-- Pinned commit: `bb42655487b1d5fb5e0e8f289bf607ce6564b887`
+- Pinned commit: `79ba6bb46f2b574dea9ae8fcb6ffdb1480e614cc`
 - File: `Jsp000840.lean` (self-contained, **Lean 4 core only, no Mathlib dependency**, ~1500 lines)
 - Toolchain: Lean v4.34.0 (pinned in `lean-toolchain`)
 
@@ -40,7 +40,7 @@ Statement correspondence notes: a simple graph on `n` vertices is a symmetric ir
 
 - Local kernel check (Lean v4.34.0, Windows, `lean Jsp000840.lean`): pass, no errors, no warnings (2026-09-17).
 - Axiom audit (`#print axioms jsp_000840`): `propext`, `Classical.choice`, `Quot.sound` only. **No `sorryAx`; no `native_decide`/`Lean.ofReduceBool`** — the entire development is kernel-checked reasoning with no trusted computation.
-- CI kernel check (GitHub Actions, ubuntu-latest, fresh elan + Lean v4.34.0, `lean Jsp000840.lean` plus automated sorryAx scan): bb42655487b1d5fb5e0e8f289bf607ce6564b887.
+- CI kernel check (GitHub Actions, ubuntu-latest, fresh elan + Lean v4.34.0, `lean Jsp000840.lean` plus automated sorryAx scan): https://github.com/tongriyaotxt/jsp-000840-lean-proof/actions/runs/35176239466 — result: pass ("PROOF VERIFIED: no errors"; "AXIOM AUDIT PASSED: no sorryAx").
 
 If the record for JSP-000840 is updated to `Lean proof: Yes` (t = 1 component) following review, its claim-status screening flags would change accordingly; this issue supplies the evidence for that review. The submission covers only the `t = 1` case; the general Lovász–Simonovits theorem (`t < ⌊n/2⌋`) is not part of this submission.
 
